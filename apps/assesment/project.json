@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/assesment",
         "index": "apps/assesment/src/index.html",
@@ -18,7 +20,10 @@
           "apps/assesment/src/favicon.ico",
           "apps/assesment/src/assets"
         ],
-        "styles": ["apps/assesment/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
+          "apps/assesment/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -83,7 +88,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/assesment"],
+      "outputs": [
+        "coverage/apps/assesment"
+      ],
       "options": {
         "jestConfig": "apps/assesment/jest.config.js",
         "passWithNoTests": true
