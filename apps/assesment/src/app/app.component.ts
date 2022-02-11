@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tt-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
+
+  template: `<div>franco</div> `,
 })
 export class AppComponent {
   title = 'assesment';
