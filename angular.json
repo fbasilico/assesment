@@ -1,8 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "assesment": "apps/assesment",
-    "assesment-e2e": "apps/assesment-e2e",
+    "assessment": "apps/assessment",
+    "assessment-e2e": "apps/assessment-e2e",
     "playlists-featured-playlists": "libs/playlists/featured-playlists",
     "playlists-shell": "libs/playlists/shell",
     "playlists-state": "libs/playlists/state",

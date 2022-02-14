@@ -1,17 +1,17 @@
 {
-  "root": "apps/assesment-e2e",
-  "sourceRoot": "apps/assesment-e2e/src",
+  "root": "apps/assessment-e2e",
+  "sourceRoot": "apps/assessment-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/assesment-e2e/cypress.json",
-        "devServerTarget": "assesment:serve:development"
+        "cypressConfig": "apps/assessment-e2e/cypress.json",
+        "devServerTarget": "assessment:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "assesment:serve:production"
+          "devServerTarget": "assessment:serve:production"
         }
       }
     },
@@ -22,13 +22,13 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "apps/assesment-e2e/**/*.{js,ts}"
+          "apps/assessment-e2e/**/*.{js,ts}"
         ]
       }
     }
   },
   "tags": [],
   "implicitDependencies": [
-    "assesment"
+    "assessment"
   ]
 }

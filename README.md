@@ -1,4 +1,4 @@
-# T&t Assesment
+# T&t assessment
 
 ## Run app
 
