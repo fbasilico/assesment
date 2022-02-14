@@ -1,0 +1,42 @@
+{
+  "projectType": "library",
+  "root": "libs/playlists/shell",
+  "sourceRoot": "libs/playlists/shell/src",
+  "prefix": "tt",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/playlists/shell"],
+      "options": {
+        "project": "libs/playlists/shell/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/playlists/shell/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/playlists/shell/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/playlists/shell"],
+      "options": {
+        "jestConfig": "libs/playlists/shell/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/playlists/shell/src/**/*.ts",
+          "libs/playlists/shell/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

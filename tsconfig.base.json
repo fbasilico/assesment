@@ -14,7 +14,17 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@tt/playlists-shell": ["libs/playlists/shell/src/index.ts"],
+      "@tt/playlists/featured-playlists": [
+        "libs/playlists/featured-playlists/src/index.ts"
+      ],
+      "@tt/playlists/state": ["libs/playlists/state/src/index.ts"],
+      "@tt/shared-layout": ["libs/shared/layout/src/index.ts"],
+      "@tt/shared/environment": ["libs/shared/environment/src/index.ts"],
+      "@tt/shared/theme": ["libs/shared/theme/src/index.ts"],
+      "@tt/shared/ui-components": ["libs/shared/ui-components/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

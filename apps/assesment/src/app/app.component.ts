@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'tt-root',
-
-  template: `<div>franco</div> `,
+  template: `<router-outlet></router-outlet>`,
 })
 export class AppComponent {
   title = 'assesment';
